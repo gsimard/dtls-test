@@ -33,7 +33,7 @@ main(int argc, char *argv[argc])
 
     // Read the contents of the file (up to 4KB) into a buffer
     FILE *fp = fopen(argv[1], "rb");
-    uint8_t buffer[4096] = { 0 };
+    unsigned char buffer[4096] = { 0 };
     size_t numRead = fread(buffer, 1, 4096, fp);
 
     // Write the buffer to the server

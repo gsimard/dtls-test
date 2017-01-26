@@ -60,7 +60,7 @@ main()
     char outbuf[4096];
     while(true) {
         struct sockaddr_in addr;
-        uint len = sizeof(addr);
+        unsigned int len = sizeof(addr);
         SSL *ssl;
 
         // Accept an incoming UDP packet (connection)
